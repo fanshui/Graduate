@@ -1,0 +1,85 @@
+@fanghui  毕设
+主函数在 包main  中  FinalMain Class
+使用：
+      将测试样本词语用 "//s"(空白字符)分开放入 test/test.data  运行后会弹出图的邻接矩阵
+      修改配置文件proper 其中， "Dimnum":特征值分解后向量的维数，这些行向量会写入在kmeansArray中
+	                "kmeans_K":K-Means聚类中K的值 即最后聚成多少类  
+中间文件 ：
+mid|
+   |- wordmaps 词语的键值对
+   |- wordsim  词语间两两相似度
+   |- adjMatrix   初始化图后的邻接矩阵
+   |- eigenValuesDecom 特征值分解结果
+   |- kmeansArray 需要进行K-Means聚类的矩阵
+
+工程结构：   
+|--.classpath
+|--.project
+|--bin
+|--|--k_means
+|--|--|--ArrayListWEKAkmeans.class
+|--|--|--kmeans.class
+|--|--|--KMeans_er.class
+|--|--main
+|--|--|--FinalMain$1.class
+|--|--|--FinalMain$2.class
+|--|--|--FinalMain$3.class
+|--|--|--FinalMain.class
+|--|--resultDB
+|--|--|--MyDB.class
+|--|--similarityCom
+|--|--|--Main.class
+|--|--|--Primitive.class
+|--|--|--TypeOfWord.class
+|--|--|--Word.class
+|--|--spectralclustering
+|--|--|--Adjacentmatrix.class
+|--|--|--EigenDim.class
+|--|--|--MatrixOpera.class
+|--|--utils
+|--|--|--HkmeanArrData.class
+|--|--|--Loadglossary.class
+|--|--|--SomeUtils.class
+|--dict
+|--|--glossary.data
+|--|--human_family_glossary.data
+|--|--human_glossary.data
+|--|--primitive.data
+|--lib
+|--|--commons-io-2.4.jar
+|--|--Jama.jar
+|--|--mysql-connector-java-5.1.38-bin.jar
+|--|--ujmp-complete-0.3.0.jar
+|--|--weka.jar
+|--mid
+|--|--adjMatrix
+|--|--eigenValuesDecom
+|--|--kmeansArray.data
+|--|--wordmaps
+|--|--wordSim
+|--readme
+|--src
+|--|--k_means
+|--|--|--ArrayListWEKAkmeans.java
+|--|--|--kmeans.java
+|--|--|--KMeans_er.java
+|--|--main
+|--|--|--FinalMain.java
+|--|--resultDB
+|--|--|--MyDB.java
+|--|--similarityCom
+|--|--|--Main.java
+|--|--|--Primitive.java
+|--|--|--TypeOfWord.java
+|--|--|--Word.java
+|--|--spectralclustering
+|--|--|--Adjacentmatrix.java
+|--|--|--EigenDim.java
+|--|--|--MatrixOpera.java
+|--|--utils
+|--|--|--HkmeanArrData.java
+|--|--|--Loadglossary.java
+|--|--|--SomeUtils.java
+|--test
+|--|--result.data
+|--|--test.data
