@@ -153,31 +153,5 @@ public class Word {
 	}
 	
 	 
-	 
-	 
-	 public static void main(String[] args) {
-		
-		 //输出所有的词语
-//		 Iterator<Word> iterator = all_words.iterator();
-//		int wordID = 1;	
-//		while (iterator.hasNext()) {
-//			Word word = (Word) iterator.next();
-//			System.out.print(wordID +"  word:  "+word.getWord() +   "       type: " + word.getType() + " primitives: ");
-//		    word.printPrimitives();
-//		    System.out.println();
-//			wordID ++;
-//		}
-		 
-
-		 
-//		 String string = "学校";
-//		 Word word = Word.getWordfromword(string);
-//		 System.out.print("  word:  "+word.getWord() +   "       type: " + word.getType() + " primitives: ");
-//		 word.printPrimitives();
-		 
-
-		 
-	}
-	    
     
 }
